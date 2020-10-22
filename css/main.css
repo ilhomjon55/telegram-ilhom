@@ -1,0 +1,163 @@
+/* CONTACT SECTION */
+
+.contacts {
+  padding-top: 20px;
+  width: 430px;
+
+  background-color: #EFF0F2;
+}
+
+.contacts__search-label {
+  position: fixed;
+  z-index: 10;
+  width: 382px;
+  margin-top: -20px;
+  padding-bottom: 10px !important;
+  background-color: #EFF0F2;
+}
+
+.contacts__search {
+  background-color: #EFF0F2;
+}
+
+.contacts__list.contacts__list {
+  margin-top: 45px !important;
+  padding-right: 10px;
+  margin-right: -10px !important;
+  height: 100vh;
+  overflow: auto;
+}
+
+.contacts__list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.contacts__list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px transparent;
+}
+
+.contacts__list::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.contacts__list:hover::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.contacts__list:hover::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+.contact__name {
+  max-width: 200px;
+  flex-grow: 1;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact__time {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.contact__from {
+  max-width: 130px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact__last-message {
+  max-width: 160px;
+  font-size: 14px;
+  color: #333333;
+  opacity: 0.8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* CHAT */
+.chat {
+  background: #DCE1E5;
+}
+
+.chats__wrapper {
+  height: 100vh;
+  overflow: auto;
+}
+
+.chat__header {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 1160px;
+  background-color: #EFF0F2;
+}
+
+.chat__members {
+  font-size: 14px;
+}
+
+
+
+.chat__right-img {
+  background: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.chat__messages-wrapper {
+  margin-top: 80px;
+}
+
+.chat__message-box {
+  width: 480px;
+}
+
+.chat__message {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px 5px 5px 0;
+}
+
+.chat__message::after {
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.chat__message-heading {
+  font-size: 14px;
+}
+
+.chat__message-status {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.chat__message-text {
+  font-size: 15px;
+}
+
+.chat__message-time {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* MODAL */
+
+.modal-content {
+  max-width: 450px;
+  background-color: #EFF0F2;
+}
