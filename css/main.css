@@ -103,6 +103,13 @@
   font-size: 14px;
 }
 
+.chat__left-box {
+  outline: none;
+}
+
+.chat__left-box:focus {
+  outline: none;
+}
 
 
 .chat__right-img {
