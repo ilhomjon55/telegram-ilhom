@@ -13,27 +13,30 @@
   <h1 class="sr-only">Telegram web version</h1>
   <!-- TELEGRAM WRAPPER -->
   <main class="main-wrapper w-100 my-0 mx-auto p-0 row">
-    <!-- CONTACTS SECTION -->
-    <section class="contacts py-3 px-4 pb-0 pb-0">
+    <!-- ============================================================================================== CONTACTS SECTION                                              
+    ================================================================================================-->
+    <section class="contacts col-3 d-flex flex-column pt-3 px-1 ">
       <h2 class="sr-only">Contacts section</h2>
-      <label class="contacts__search-label py-3">
-        <input class="contacts__search  form-control w-100" type="text" placeholder="Search">
-      </label>
-      <ul class="contacts__list list-unstyled m-0 nav d-block" id="myTab">
-        <li class="contact mb-3 nav-item">
+      <form class="contacts__search-form py-3 px-2" method="GET" action="https://echo.htmlacademy.ru/">
+        <input class="contacts__search  form-control w-100" type="search" name="search_value" placeholder="Search">
+      </form>
+      <ul class="contacts__list list-unstyled nav flex-nowrap flex-column flex-grow-1 m0 pr-2 px-1 overflow-auto"
+        id="myTab">
+
+        <li class="contact mb-3">
           <a href="#mayoq"
-            class="contact__inner d-flex justify-content-between align-items-center text-decoration-none nav-link active p-0"
+            class="contact__inner d-flex justify-content-between align-items-center text-decoration-none  active p-0"
             data-toggle="tab">
             <img class="contact__img rounded-circle mr-2" src="img/podia.jpg" alt="Contact image" width="50"
               height="50">
             <div class="contact__info flex-grow-1">
               <div class="contact__info-top d-flex justify-content-between align-items-center mb-2">
-                <h3 class="contact__name h6 m-0">Mayoq Podia chat</h3>
-                <time class="contact__time h10" datetime="2020-10-21 20:00">20:00 PM</time>
+                <h3 class="contact__name flex-grow-1 text-truncate text-dark h6 m-0">Mayoq Podia chat</h3>
+                <time class="contact__time h10 text-nowrap" datetime="2020-10-21 20:00">20:00 PM</time>
               </div><!-- contact__info-top -->
               <div class="contact__info-bottom d-flex align-items-center">
-                <span class="contact__from mr-1">Muhammadjavohir:</span>
-                <span class="contact__last-message mr-1">
+                <span class="contact__from text-truncate mr-1">Muhammadjavohir:</span>
+                <span class="contact__last-message text-dark text-truncate mr-1">
                   Fikrlar, taklif va tavsiyalar bo'lsa, xursand bo'lamiz
                 </span>
                 <span class="contact__number-message badge badge-pill badge-dark ml-auto">571</span>
@@ -41,35 +44,34 @@
             </div><!-- contact__info -->
           </a>
         </li>
-        <li class="contact mb-3 nav-item">
+        <li class="contact mb-3">
           <a href="#mj"
-            class="contact__inner d-flex justify-content-between align-items-center text-decoration-none nav-link p-0"
+            class="contact__inner d-flex justify-content-between align-items-center text-decoration-none  p-0"
             data-toggle="tab">
             <img class="contact__img rounded-circle mr-2" src="img/mj.jpg" alt="Contact image" width="50" height="50">
             <div class="contact__info flex-grow-1">
               <div class="contact__info-top d-flex justify-content-between align-items-center mb-2">
-                <h3 class="contact__name h6 m-0">Muhammadjavohir Sur`atov</h3>
+                <h3 class="contact__name flex-grow-1 text-truncate h6 text-dark m-0">Muhammadjavohir Sur`atov</h3>
                 <img class="done__icon ml-auto mr-1" src="img/done_all-24px.svg" alt="Done icon" width="15" height="15">
-                <time class="contact__time h10" datetime="2020-10-21 20:00">20:00 PM</time>
+                <time class="contact__time h10 text-nowrap" datetime="2020-10-21 20:00">20:00 PM</time>
               </div><!-- contact__info-top -->
               <div class="contact__info-bottom d-flex align-items-center">
-                <span class="contact__from mr-1">Muhammadjavohir:</span>
-                <span class="contact__last-message mr-1">
+                <span class="contact__from text-truncate mr-1">Muhammadjavohir:</span>
+                <span class="contact__last-message text-dark text-truncate mr-1">
                   Moro, moro bo`lsin! Imtihondan o`tdingiz! 😀 👍 </span>
                 <span class="contact__number-message badge badge-pill badge-dark ml-auto">10</span>
               </div>
             </div><!-- contact__info -->
           </a>
         </li>
-
       </ul>
     </section>
-
-
-    <!-- SECTION CHAT -->
+    <!-- ===================================================================================================
+    SECTION CHAT
+    ====================================================================================================== -->
     <section class="chat flex-grow-1">
       <!-- CHATS-WRAPPER -->
-      <div class="chats__wrapper tab-content">
+      <div class="chats__wrapper tab-content tab">
         <!-- chat-item -->
         <div class="chat__item tab-pane active" id="mayoq">
           <div class="chat__header position-fixed d-flex align-items-center py-2 px-3">

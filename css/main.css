@@ -1,18 +1,12 @@
 /* CONTACT SECTION */
 
 .contacts {
-  padding-top: 20px;
-  width: 430px;
-
+  height: 100vh;
   background-color: #EFF0F2;
 }
 
-.contacts__search-label {
-  position: fixed;
-  z-index: 10;
-  width: 382px;
+.contacts__search-form {
   margin-top: -20px;
-  padding-bottom: 10px !important;
   background-color: #EFF0F2;
 }
 
@@ -20,13 +14,7 @@
   background-color: #EFF0F2;
 }
 
-.contacts__list.contacts__list {
-  margin-top: 45px !important;
-  padding-right: 10px;
-  margin-right: -10px !important;
-  height: 100vh;
-  overflow: auto;
-}
+/* Style scrollbar */
 
 .contacts__list::-webkit-scrollbar {
   width: 5px;
@@ -51,34 +39,21 @@
 
 .contact__name {
   max-width: 200px;
-  flex-grow: 1;
-  color: #333333;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .contact__time {
   font-size: 14px;
-  white-space: nowrap;
 }
 
 .contact__from {
   max-width: 130px;
   font-size: 14px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .contact__last-message {
   max-width: 160px;
   font-size: 14px;
-  color: #333333;
   opacity: 0.8;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* CHAT */
