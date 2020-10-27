@@ -67,10 +67,6 @@
 }
 
 .chat__header {
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  max-width: 1160px;
   background-color: #EFF0F2;
 }
 
