@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Telegram Ilhom</title>
+  <title>Telegram | Ilhom</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -12,18 +12,22 @@
 <body>
   <h1 class="sr-only">Telegram web version</h1>
   <!-- TELEGRAM WRAPPER -->
-  <main class="main-wrapper w-100 my-0 mx-auto p-0 row">
-    <!-- ============================================================================================== CONTACTS SECTION                                              
-    ================================================================================================-->
-    <section class="contacts col-3 d-flex flex-column pt-3 px-1 ">
+  <main class="main-wrapper vh-100 my-0 mx-auto p-0 row ">
+    <!-- ===================================================  
+      CONTACTS SECTION                                              
+    ======================================================== -->
+    <section class="contacts col-3 d-flex flex-column pt-3 px-1 border-right">
       <h2 class="sr-only">Contacts section</h2>
-      <form class="contacts__search-form py-3 px-2" method="GET" action="https://echo.htmlacademy.ru/">
+      <form class="contacts__search-form py-3 px-2 d-flex align-items-center" method="GET"
+        action="https://echo.htmlacademy.ru/">
+        <button class="btn btn badge-info  mr-2" type="button" data-toggle="modal"
+          data-target="#menuModal">&#9776;</button>
         <input class="contacts__search  form-control w-100" type="search" name="search_value" placeholder="Search">
       </form>
       <ul class="contacts__list list-unstyled nav flex-nowrap flex-column flex-grow-1 m0 pr-2 px-1 overflow-auto"
         id="myTab">
 
-        <li class="contact mb-3">
+        <li class="contact py-2 border-bottom active">
           <a href="#mayoq"
             class="contact__inner d-flex justify-content-between align-items-center text-decoration-none  active p-0"
             data-toggle="tab">
@@ -39,12 +43,12 @@
                 <span class="contact__last-message text-dark text-truncate mr-1">
                   Fikrlar, taklif va tavsiyalar bo'lsa, xursand bo'lamiz
                 </span>
-                <span class="contact__number-message badge badge-pill badge-dark ml-auto">571</span>
+                <span class="contact__number-message badge badge-pill badge-info ml-auto">571</span>
               </div>
             </div><!-- contact__info -->
           </a>
         </li>
-        <li class="contact mb-3">
+        <li class="contact py-2 border-bottom">
           <a href="#mj"
             class="contact__inner d-flex justify-content-between align-items-center text-decoration-none  p-0"
             data-toggle="tab">
@@ -59,26 +63,26 @@
                 <span class="contact__from text-truncate mr-1">Muhammadjavohir:</span>
                 <span class="contact__last-message text-dark text-truncate mr-1">
                   Moro, moro bo`lsin! Imtihondan o`tdingiz! 😀 👍 </span>
-                <span class="contact__number-message badge badge-pill badge-dark ml-auto">10</span>
+                <span class="contact__number-message badge badge-pill badge-info ml-auto">10</span>
               </div>
             </div><!-- contact__info -->
           </a>
         </li>
       </ul>
     </section>
-    <!-- ===================================================================================================
+    <!-- ============================================= 
     SECTION CHAT
-    ====================================================================================================== -->
-    <section class="chat flex-grow-1">
+    ================================================== -->
+    <section class="chat bg-info col-7 flex-grow-1 px-0">
       <!-- CHATS-WRAPPER -->
-      <div class="chats__wrapper tab-content tab">
+      <div class="chats__wrapper vh-100 overflow-auto tab-content tab">
         <!-- chat-item -->
         <div class="chat__item tab-pane active" id="mayoq">
-          <div class="chat__header d-flex flex-grow-1 align-items-center py-2 px-3">
+          <div class="chat__header d-flex flex-grow-1 align-items-center py-2 px-3 bg-white  border-bottom">
             <button class="chat__left-box flex-grow-1 d-flex flex-md-column border-0" type="button" data-toggle="modal"
               data-target="#exampleMayoq">
-              <h3 class="chat__name h6 mb-1">Mayoq Podia chat</h3>
-              <span class="chat__members">45 members</span>
+              <span class="chat__name h6 mb-1">Mayoq Podia chat</span>
+              <span class="chat__members text-muted">45 members</span>
             </button>
             <div class="chat__right-box d-flex active ml-auto">
               <a href="#" class="chat__right-img">
@@ -93,7 +97,7 @@
                   aria-haspopup="true" aria-expanded="false">
                   <img class="" src="img/more_vert-24px.svg" alt="Search icon" width="25" height="25">
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-1">
+                <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton-1">
                   <a class="dropdown-item" href="#">Enable notifications</a>
                   <a class="dropdown-item" href="#">Export channel history</a>
                   <a class="dropdown-item" href="#">Leave channel</a>
@@ -124,11 +128,11 @@
           </div><!-- chat__item -->
         </div><!-- chat__item -->
         <div class="chat__item chat__item-2 tab-pane" id="mj">
-          <div class="chat__header d-flex flex-grow-1 align-items-center py-2 px-3">
+          <div class="chat__header d-flex flex-grow-1 align-items-center border-bottom py-2 px-3 bg-white">
             <button class="chat__left-box flex-grow-1 d-flex flex-md-column border-0" type="button" data-toggle="modal"
               data-target="#exampleMayoqjon">
-              <h3 class="chat__name h6 mb-1">Muhammadjavohir Sur`atov</h3>
-              <span class="chat__members">last seen recently</span>
+              <span class="chat__name h6 mb-1">Muhammadjavohir Sur`atov</span>
+              <span class="chat__members text-muted">last seen recently</span>
             </button>
             <div class="chat__right-box d-flex active ml-auto">
               <img class="chat__right-img" src="img/search-24px.svg" alt="Search icon" width="25" height="25">
@@ -139,7 +143,7 @@
                   aria-haspopup="true" aria-expanded="false">
                   <img class="" src="img/more_vert-24px.svg" alt="Search icon" width="25" height="25">
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-2">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton-2">
                   <a class="dropdown-item" href="#">Enable notifications</a>
                   <a class="dropdown-item" href="#">Export channel history</a>
                   <a class="dropdown-item" href="#">Leave channel</a>
@@ -165,9 +169,228 @@
                 </div>
               </div><!-- chat__message -->
             </div><!-- chat__message-box -->
-
+            <div class="chat__message-box ml-3 mb-4 d-flex">
+              <img class="chat__message-img mt-auto rounded-circle mr-3" src="img/mj.jpg" alt="Muhammadjavohir Suratov"
+                width="50" height="50">
+              <div class="chat__message p-2">
+                <div class="chat__message-header d-flex align-items-center justify-content-between ">
+                  <h4 class="chat__message-heading h6 m-0">Muhammadjavohir Sur`atov</h4>
+                  <span class="chat__message-status">owner</span>
+                </div><!-- chat__message-header -->
+                <div class="chat__message-bottom d-flex align-items-center">
+                  <p class="chat__message-text m-0">
+                    Moro, moro bo`lsin! Imtihondan o`tdingiz! 😀 👍
+                  </p>
+                  <time class="chat__message-time ml-2 pt-2" datetime="11:26">11:26 PM</time>
+                </div>
+              </div><!-- chat__message -->
+            </div><!-- chat__message-box -->
+            <div class="chat__message-box ml-3 mb-4 d-flex">
+              <img class="chat__message-img mt-auto rounded-circle mr-3" src="img/mj.jpg" alt="Muhammadjavohir Suratov"
+                width="50" height="50">
+              <div class="chat__message p-2">
+                <div class="chat__message-header d-flex align-items-center justify-content-between ">
+                  <h4 class="chat__message-heading h6 m-0">Muhammadjavohir Sur`atov</h4>
+                  <span class="chat__message-status">owner</span>
+                </div><!-- chat__message-header -->
+                <div class="chat__message-bottom d-flex align-items-center">
+                  <p class="chat__message-text m-0">
+                    Moro, moro bo`lsin! Imtihondan o`tdingiz! 😀 👍
+                  </p>
+                  <time class="chat__message-time ml-2 pt-2" datetime="11:26">11:26 PM</time>
+                </div>
+              </div><!-- chat__message -->
+            </div><!-- chat__message-box -->
           </div><!-- chat__item -->
-        </div><!-- chat__item -->
+        </div>
+      </div>
+    </section>
+    <!-- ==============================================
+    SECTION EMOJIES
+  ================================================== -->
+    <section class="emojies col-2 px-0 border-left d-flex flex-column">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item flex-grow-1 text-center " role="presentation">
+          <a class="nav-link text-info active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+            aria-controls="home" aria-selected="true">EMOJI</a>
+        </li>
+        <li class="nav-item flex-grow-1 text-center " role="presentation">
+          <a class="nav-link text-info" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+            aria-controls="profile" aria-selected="false">STICKERS</a>
+        </li>
+        <li class="nav-item flex-grow-1 text-center " role="presentation">
+          <a class="nav-link text-info" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+            aria-controls="contact" aria-selected="false">GIFS</a>
+        </li>
+      </ul>
+      <div class="tab-content d-flex flex-column flex-grow-1 overflow-hidden" id="myTabContent">
+        <div class="tab-pane p-2 fade show active    flex-column flex-grow-1 overflow-auto" id="home" role="tabpanel"
+          aria-labelledby="home-tab">
+          <ul class="emojies__list list-unstyled d-flex flex-wrap align-items-center justify-content-center">
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🥶</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">🤫</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😁</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😍</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😎</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+            <li class="emojies__item py-2 px-2 mx-1">😊</li>
+          </ul>
+        </div>
+        <div class="tab-pane p-2 fade overflow-auto" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+          <span class="sticker">🤲</span>
+        </div>
+        <div class="tab-pane p-2 fade overflow-auto" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <video src="img/animation.gif.mp4" width="220" height="120"></video>
+          <video src="img/farruhaka.mp4" width="250" height="100"></video>
+          <video src="img/animation.gif.mp4" width="220" height="120"></video>
+          <video src="img/farruhaka.mp4" width="250" height="100"></video>
+          <video src="img/animation.gif.mp4" width="220" height="120"></video>
+          <video src="img/farruhaka.mp4" width="250" height="100"></video>
+          <video src="img/animation.gif.mp4" width="220" height="120"></video>
+          <video src="img/farruhaka.mp4" width="250" height="100"></video>
+        </div>
       </div>
     </section>
   </main>
@@ -175,7 +398,7 @@
   <div class="modal fade" id="exampleMayoq" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header align-items-center">
           <h5 class="modal-title h5 font-weight-normal">Group Info</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -199,18 +422,58 @@
       </div>
     </div>
   </div>
+  <!-- ===========================================
+    MODALS
+  ============================================= -->
+  <!-- Modal-Menu -->
+  <div class="modal modal-menu  fade" id="menuModal" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog mr-auto my-0 ml-0 ml-0  vh-100 w-100 h-100">
+      <div class="modal-content m-0 w-100 h-100">
+        <div class="modal-header d-flex align-items-center justify-content-center">
+          <img class="rounded-circle mr-5 border" src="img/ilhomjon.jpg" alt="My photo" width="100" height="100">
+          <div class="d-flex flex-column">
+            <h3 class="h5">Ilhom</h3>
+            <a href="tel:974302071" class="tel text-muted">974302071</a>
+            <span class="text-muted">@shamidinov</span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group-flush mr-auto pl-0">
+            <li class="list-group-item list-group-item-action">New group</li>
+            <li class="list-group-item list-group-item-action">New Channel</li>
+            <li class="list-group-item list-group-item-action">Contacts</li>
+            <li class="list-group-item list-group-item-action">Calls</li>
+            <li class="list-group-item list-group-item-action">Settings</li>
+            <li class="list-group-item list-group-item-action  d-flex align-items-center  ">Night Mode
+              <div class="custom-control custom-switch ml-auto">
+                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                <label class="custom-control-label" for="customSwitch2"></label>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="modal-footer">
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL -->
   <div class="modal fade" id="exampleMayoqjon" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header align-items-center">
           <h5 class="modal-title h5 font-weight-normal">User Info</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body d-flex">
+        <div class="modal-body d-flex border-bottom">
           <img class="rounded-circle" src="img/mj.jpg" alt="Muhammadjavohir Sur`atov" width="60" height="60">
-          <div class="modal__name-info ml-4 border-bottom">
+          <div class="modal__name-info ml-4">
             <h4 class="modal__name chat__name h5 mb-1">Muhammadjavohir Sur`atov</h4>
             <span class="group__member chat__members">last seen recently</span>
           </div>
@@ -225,11 +488,11 @@
         </div>
       </div>
     </div>
+  </div>
 
 
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
